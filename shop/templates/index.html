@@ -5,10 +5,8 @@
     <title>Tytul</title>
 </head>
 <body>
-    {% for element in elements %}
-        <p>{{ element.first_name }}</p>
-        <p>{{ element.last_name }}</p>
-        <a href="">{{ element.store }}</a>
+    {% for element in lista_employ %}
+        <p>{{ element.first_name }} {{ element.last_name }} <a href="{{ element.store.id }}"> LINK DO SKLEPU </a></p>
     {% endfor %}
 </body>
 </html>
