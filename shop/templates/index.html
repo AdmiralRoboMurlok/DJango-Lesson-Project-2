@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tytul</title>
+</head>
+<body>
+    {% for element in elements %}
+        <p>{{ element.first_name }}</p>
+        <p>{{ element.last_name }}</p>
+        <a href="">{{ element.store }}</a>
+    {% endfor %}
+</body>
+</html>
