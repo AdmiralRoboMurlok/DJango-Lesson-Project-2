@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Employee
+from django.shortcuts import render, HttpResponse
+from .models import Employee, Store
 
 # Create your views here.
 def index(request):
@@ -8,3 +8,8 @@ def index(request):
     return render(request, 'index.html', context={
         'elements': lista_employ
     })
+
+def store(request, id):
+    dane_z_id_store = Store.objects.filter(id=id)
+
+    return HttpResponse(str(dane_z_id_store.name) + ' | ' + str(dane_z_id_store.location))
