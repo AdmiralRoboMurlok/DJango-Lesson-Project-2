@@ -3,6 +3,6 @@ from .views import index, store
 
 urlpatterns = [
    path('pracownicy/', index),
-   path('sklep/<int::id>', store),
+   path('sklep/<int:id>', store),
 ]
 
