@@ -5,8 +5,8 @@
     <title>Tytul</title>
 </head>
 <body>
-    {% for element in lista_employ %}
-        <p>{{ element.first_name }} {{ element.last_name }} <a href="http://127.0.0.1:0000/sklep_glowny/sklep/"> {{ element.store.id }} </a></p>
+    {% for elements in elements %}
+        <p>{{ elements.first_name }} {{ elements.last_name }} <a href="http://127.0.0.1:0000/sklep_glowny/sklep/"> {{ elements.store.id }} </a></p>
     {% endfor %}
 </body>
 </html>

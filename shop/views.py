@@ -10,6 +10,6 @@ def index(request):
     })
 
 def store(request, id):
-    dane_z_id_store = Store.objects.filter(id=id)
+    dane_z_id_store = Store.objects.get(id=id)
 
     return HttpResponse(str(dane_z_id_store.name) + ' | ' + str(dane_z_id_store.location))
