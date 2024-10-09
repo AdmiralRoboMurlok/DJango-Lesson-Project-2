@@ -6,7 +6,7 @@
 </head>
 <body>
     {% for elements in elements %}
-        <p>{{ elements.first_name }} {{ elements.last_name }} <a href="http://127.0.0.1:0000/sklep_glowny/sklep/"> {{ elements.store.id }} </a></p>
+        <p>{{ elements.first_name }} {{ elements.last_name }} <a href="http://localhost:8000/sklep_glowny/sklep/{{ elements.store.id }}"> LINK DO SKLEPU </a></p>
     {% endfor %}
 </body>
 </html>
